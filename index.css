@@ -1,0 +1,152 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: sans-serif;
+  background-color: rgb(2, 13, 24);
+  color: white;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+}
+
+/*menu*/
+nav
+{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(2, 13, 24);
+}
+
+.nav-links
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: right;
+}
+.nav-links li
+{
+  list-style: none;
+}
+a.link
+{
+  text-decoration: none;
+  color: white;
+}
+div.menu-icon
+{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  right:0;
+  display: none;
+}
+@media screen and (max-width: 780px)
+{
+  nav
+  {
+    z-index: 1;
+  }
+  .nav-links
+  {
+    position: fixed;
+    height: 100%;
+    width:100%;
+    background: black;
+    flex-direction: column;
+    right: -100%;
+    transition: 0.5s;
+
+  }
+  div.menu-icon
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-right: 12px;
+  }
+  .nav-links.open
+  {
+    right:0;
+
+  }
+  .mappa
+		{
+
+			width:300px;
+		}
+}
+
+/*index*/
+a.modulo
+{
+  font-size: 20pt;
+}
+div.modulo
+{
+  text-align: center;
+   width:100%;
+}
+.mappa
+{
+  padding-bottom: 30px;
+}
+
+/*chi siamo*/
+p.testo
+{
+  text-align: justify;
+  margin:40px;
+  font-size: 15pt
+}
+
+/*download*/
+div.download-content
+{
+  width:100%;
+  text-align: center;
+  padding-top: 30px;
+}
+h1.titolo_download
+{
+  padding-top: 30px;
+  text-align: center;
+}
+
+/*video*/
+video
+{
+  width:100%;
+  height:100%;
+}
+/*footer*/
+footer
+{
+  width:100%;
+  background-color: #ff7514;
+  text-align:center;
+  height: 120px;
+}
+b.cont_pre
+{
+  font-size:20pt;
+  padding-bottom: 10px;
+}
+
+p.via
+{
+  padding-top:10px;
+}

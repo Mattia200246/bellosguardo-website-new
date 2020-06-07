@@ -1,0 +1,56 @@
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> <!-- menu !-->
+
+    <meta name="description" content="vieni a visitare il nostro resort presso Modigliana dove potrete usufruire della nostra piscina. Pernottamento disponibile">
+    <meta name="keywords" content="">
+    <meta name="googlebot" content="noarchive">
+    <meta name="googlebot" content="nosnippet">
+
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <title>Bellosguardo || Video</title>
+  </head>
+  <body>
+    <nav>
+        <div class="menu-icon">
+          <i class="fas fa-bars" id="icon"></i>
+        </div>
+        <ul class="nav-links">
+          <h3 class="title-menu"><a class="title-menu" href="./index.html">Bellosguardo</a></h3>
+            <li> <a class="link" href="./index.html">Home</a> </li>
+            <li> <a class="link" href="./chi_siamo.html">Chi siamo</a> </li>
+            <li> <a class="link" href="./video.html">Video</a> </li>
+            <li> <a class="link" target="_blank" href="https://www.facebook.com/ResortBellosguardo/">Seguici</a> </li>
+        </ul>
+    </nav>
+
+    <video controls>
+      <source src=".\video\drone.mp4" type="video/mp4">
+    </video>
+
+    <!--menu<!-->
+    <script>
+        let navLinks = document.querySelector(".nav-links");
+        let icon = document.getElementById("icon");
+        document.querySelector(".menu-icon").addEventListener("click", function()
+        {
+          navLinks.classList.toggle("open");
+          icon.classList.toggle("fa-bars");
+          icon.classList.toggle("fa-times");
+
+        });
+        window.addEventListener("resize", function ()
+        {
+          if(window.innerWidth > 760)
+          {
+            nav.Links.classList.remove("open");
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+          }
+        })
+    </script> <!--fine menu!-->
+
+  </body>
+</html>

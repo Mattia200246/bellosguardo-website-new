@@ -1,0 +1,83 @@
+<html lang="it">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width-device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> <!-- menu !-->
+
+		  <meta name="googlebot" content="noarchive">
+		  <meta name="googlebot" content="nosnippet">
+      <meta name="keywords" content="chi siamo, descrizione, resort">
+
+      <link rel="stylesheet" href="./index.css" type="text/css">
+      <title>Bellosguardo || Chi siamo</title>
+  </head>
+  <body>
+
+    <nav>
+        <div class="menu-icon">
+          <i class="fas fa-bars" id="icon"></i>
+        </div>
+        <ul class="nav-links">
+          <h3 class="title-menu"><a class="title-menu" href="./index.html">Bellosguardo</a></h3>
+            <li> <a class="link" href="./index.html">Home</a> </li>
+            <li> <a class="link" href="./chi_siamo.html">Chi siamo</a> </li>
+            <li> <a class="link" href="./video.html">Video</a> </li>
+            <li> <a class="link" target="_blank" href="https://www.facebook.com/ResortBellosguardo/">Seguici</a> </li>
+        </ul>
+    </nav>
+
+    <center><h1 style="font-family:Zapfino" ><font size="5">RESORT COUNTRY BELLOSGUARDO</font></h1></center>
+
+    <p class="testo"> Situato a Modigliana in un' incantevole posizione immerso nel verde dell'appennino tosco-romagnolo.<br/><br/>
+
+        Luogo incantato a 185M s.l.m a soli 10 minuti dal centro storico. <br/><br/>
+
+        Resort Country Bellosguardo dagli ambienti raffinati e ben curati offre confort, comodità, stile di eleganza e ambiente unico dove rilassarsi.<br/><br/>
+
+        Oasi di benessere, vi attende la cordialità del personale per offrirvi una ricca proposta di servizi come nuoto, sauna, palestra,
+        sala lettura e ambienti immersi nella natura per godersi al massimo del relax e il panorama mozzafiato. <br/><br/>
+
+        Nelle vicinanze troverete numerosi sentieri panoramici per dedicarsi alle attività all'aria aperta come trekking, gite in bici e passeggiate.
+        Facilmente raggiungibile dagli aereoporti di Bologna e Forlì. <br/><br/>
+
+        Bellosguardo in posizione strategica per chi desidera raggiungere facilmente la bella riviera romagnola e con brevi spostamenti gli ospiti potranno visitare
+        Firenze, Ravenna, Ferrara, S. Marino, Bologna e altre località di interesse turistico e culturale. <br/><br/>
+
+        Il posto ideale per un meeting di lavoro: presso la struttura è presente una sala dedicata alle riunioni e alla formazione.
+        Inoltre dotato di stanze per portatori di handicap.
+
+</p>
+
+
+
+
+    <footer>
+       <b class="cont_pre">Contatti e prenotazioni</b> <br/><br/>
+       <a href="tel:+390546940427">0546940427</a><br/>
+      <a class="mail" href="mailto:bellosguardo.fc@outlook.it">bellosguardo.fc@outlook.it</a><br/>
+        <p class="via">via Ugo la Malfa, 9 - 47015 Modigliana </p>
+     </footer>
+
+    <!--menu<!-->
+    <script>
+        let navLinks = document.querySelector(".nav-links");
+        let icon = document.getElementById("icon");
+        document.querySelector(".menu-icon").addEventListener("click", function()
+        {
+          navLinks.classList.toggle("open");
+          icon.classList.toggle("fa-bars");
+          icon.classList.toggle("fa-times");
+
+        });
+        window.addEventListener("resize", function ()
+        {
+          if(window.innerWidth > 760)
+          {
+            nav.Links.classList.remove("open");
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+          }
+        })
+    </script> <!--fine menu!-->
+  </body>
+</html>
